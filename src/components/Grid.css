@@ -1,0 +1,10 @@
+.grid {
+  margin: 2em auto;
+  outline: 3px solid #212121;
+  width: 95%;
+  background-color: #424242;
+}
+
+.div_node {
+  margin: -6px 0;
+}
