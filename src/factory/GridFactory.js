@@ -3,7 +3,7 @@ export default class GridFactory {
     const grid = [];
     for (let row = 0; row < 20; row++) {
       const currentRow = [];
-      for (let col = 0; col < 50; col++) {
+      for (let col = 0; col < 45; col++) {
         currentRow.push(this.createNode(col, row, startNode, finishNode));
       }
       grid.push(currentRow);
