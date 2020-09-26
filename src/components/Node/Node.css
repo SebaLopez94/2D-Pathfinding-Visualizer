@@ -3,7 +3,6 @@
   height: 30px;
   outline: 1.1px solid  #c72c419f;
   display: inline-block;
-  
 }
 
 .node-finish {
@@ -86,24 +85,24 @@
 
 .node-shortest-path {
   animation-name: shortestPath;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
   animation-timing-function: ease-out;
   animation-delay: 0;
   animation-direction: alternate;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-play-state: running;
-  background-color: #cc7a4a;
-  outline: 0.1px solid  #cc7a4a;
+  background-color: #cc7a4ace;
+  outline: 0.1px solid  #cc7a4ace;
 }
 
 @keyframes shortestPath {
   0% {
-    transform: scale(0.6);
+    transform: scale(1);
   }
 
   50% {
-    transform: scale(1.2);
+    transform: scale(1.4);
   }
 
   100% {
