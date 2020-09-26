@@ -28,22 +28,20 @@
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-play-state: running;
+  background-color: #631721;
 }
 
 @keyframes wallAnimation {
   0% {
     transform: scale(.3);
-    background-color:#212121;
   }
 
   50% {
-    transform: scale(1.2);
-    background-color: #212121;
+    transform: scale(1.2); 
   }
 
   100% {
     transform: scale(1.0);
-    background-color:#212121;
   }
 }
 
@@ -75,14 +73,14 @@
 
   75% {
     transform: scale(1.2);
-    background-color: #c72c419f;
-    outline: 0px solid  #c72c419f;
+    background-color: #c72c4173;
+    outline: 0px solid  #c72c4173;
   }
 
   100% {
     transform: scale(1);
-    background-color: #ee46409f;
-    outline: 1.1px solid  #ee46409f;
+    background-color: #cc4a5b52;
+    outline: 1.1px solid  #cc4a5b52;
   }
 }
 
@@ -95,21 +93,20 @@
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-play-state: running;
+  background-color: #cc7a4a;
+  outline: 0.1px solid  #cc7a4a;
 }
 
 @keyframes shortestPath {
   0% {
     transform: scale(0.6);
-    background-color: #af174c;
   }
 
   50% {
     transform: scale(1.2);
-    background-color: #af174c;
   }
 
   100% {
     transform: scale(1);
-    background-color: #af174c;
   }
 }
