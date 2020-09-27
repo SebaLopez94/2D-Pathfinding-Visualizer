@@ -11,6 +11,27 @@ export default class GridFactory {
     return grid;
   };
 
+  static clearGrid = (startNode, finishNode) => {
+    const grid = [];
+    for (let row = 0; row < 20; row++) {
+      const currentRow = [];
+      for (let col = 0; col < 45; col++) {
+        currentRow.push(this.createNode(col, row, startNode, finishNode));
+        if (col === startNode.col && row === startNode.row) {
+          document.getElementById(`node-${row}-${col}`).className =
+            "node node-start";
+        } else if (col === finishNode.col && row === finishNode.row) {
+          document.getElementById(`node-${row}-${col}`).className =
+            "node node-finish";
+        } else {
+          document.getElementById(`node-${row}-${col}`).className = "node";
+        }
+      }
+      grid.push(currentRow);
+    }
+    return grid;
+  };
+
   static getNewGridWithWallToggled = (grid, row, col) => {
     const newGrid = grid.slice();
     const node = newGrid[row][col];
@@ -28,7 +49,7 @@ export default class GridFactory {
     const newNode = {
       ...node,
       isStart: !leaveTheNode,
-      isWall: false
+      isWall: false,
     };
     newGrid[row][col] = newNode;
     return newGrid;
@@ -40,12 +61,11 @@ export default class GridFactory {
     const newNode = {
       ...node,
       isFinish: !leaveTheNode,
-      isWall: false
+      isWall: false,
     };
     newGrid[row][col] = newNode;
     return newGrid;
   };
-
 
   static createNode = (col, row, startNode, finishNode) => {
     return {

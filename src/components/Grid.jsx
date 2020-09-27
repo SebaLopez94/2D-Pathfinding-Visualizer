@@ -32,7 +32,7 @@ const Grid = () => {
       setStartNode({ ...startNode, isMoving: true });
     } else if (nodeClicked.isFinish) {
       setFinishNode({ ...finishNode, isMoving: true });
-    }else{
+    } else {
       const newGrid = GridFactory.getNewGridWithWallToggled(grid, row, col);
       setGrid(newGrid);
     }
@@ -81,7 +81,12 @@ const Grid = () => {
         grid={grid}
         startNode={startNode}
         finishNode={finishNode}
-        onClickVisualization={() => visualizeDijkstra(grid, startNode, finishNode)}  
+        onClickVisualization={() =>
+          visualizeDijkstra(grid, startNode, finishNode)
+        }
+        onClickClear={() =>
+          setGrid(GridFactory.clearGrid(startNode, finishNode))
+        }
       ></Navbar>
       <div className="grid" onMouseUp={() => handleMouseUp()}>
         {grid.map((row, rowIdx) => {

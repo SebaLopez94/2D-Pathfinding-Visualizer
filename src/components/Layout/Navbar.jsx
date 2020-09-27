@@ -1,26 +1,30 @@
 import React from "react";
 import "./Navbar.css";
 
-const Navbar = ({onClickVisualization}) => {
+const Navbar = ({ onClickVisualization, onClickClear }) => {
   return (
-    <nav class="App-header navbar navbar-dark ">
-      <a class="navbar-brand" href="#">
+    <nav className="App-header navbar navbar-dark ">
+
         <img
           src={process.env.PUBLIC_URL + "/finditLogo.svg"}
-          width="30"
-          height="30"
-          class="d-inline-block align-top"
-          alt=""
+          width="50"
+          height="50"
+          className="d-inline-block align-top"
+          alt="FindIT" 
         />
-        <strong>&nbsp;&nbsp;FindIT</strong>
-      </a>
-      <button
-        onClick={() => onClickVisualization()}
-        class="btn btn-secondary navbar-btn "
-
-      >
-        Visualize
-      </button>
+        <h3 className="logo-name"><strong>&nbsp;&nbsp;FindIT</strong></h3>
+     
+      <div className=" mx-auto">
+        <button
+          onClick={() => onClickVisualization()}
+          className="btn btn-danger btn-visualization"
+        >
+          Visualize
+        </button>
+        <button onClick={() => onClickClear()} className="btn btn-secondary btn-clear">
+          Clear
+        </button>
+      </div>
     </nav>
   );
 };

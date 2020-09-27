@@ -1,5 +1,23 @@
-.App-header {
-    background-color: #212121;
+functionality.App-header {
+  background-color: #212121;
+  color: white;
+}
+.logo-name{
+  margin: 0px;
+}
 
-    color: white;
-  }
+.btn-visualization {
+  margin: 10px;
+  color: #fff !important;
+  background-color: #c72c419f !important;
+  border-color: #c72c419f !important;
+}
+
+.btn-visualization:hover {
+  background-color: #c53447 !important;
+  border-color: #c53447 !important; 
+}
+
+.btn-clear {
+  margin:10px;
+}
