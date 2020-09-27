@@ -8,7 +8,26 @@
 .node-finish {
   background-image: url('/finish.svg');
   background-repeat: no-repeat;
-  background-size: 29px
+  background-size: 29px;
+  outline: 0px;
+  animation-name: finishAnimation;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes finishAnimation {
+  0% {
+    transform: scale(.8);
+  }
+
+  50% {
+    transform: scale(1.3); 
+  }
+
+  100% {
+    transform: scale(.8);
+  }
 }
 
 .node-start {
@@ -16,6 +35,25 @@
   background-image: url('/start.svg');
   background-repeat: no-repeat;
   background-size: 29px;
+  outline: 0px;
+  animation-name: startAnimation;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes startAnimation {
+  0% {
+    transform: scale(.8);
+  }
+
+  50% {
+    transform: scale(1.3); 
+  }
+
+  100% {
+    transform: scale(.8);
+  }
 }
 
 .node-wall{
