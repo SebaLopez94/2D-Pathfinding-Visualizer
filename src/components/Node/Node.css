@@ -1,14 +1,14 @@
 .node {
-  width: 30px;
-  height: 30px;
-  outline: 1.1px solid  #c72c419f;
+  width: 32px;
+  height: 32px;
+  outline: 1.1px solid #c72c419f;
   display: inline-block;
 }
 
 .node-finish {
-  background-image: url('/finish.svg');
+  background-image: url("/finish.svg");
   background-repeat: no-repeat;
-  background-size: 29px;
+  background-size: 30px;
   outline: 0px;
   animation-name: startFinishAnimation;
   animation-duration: 3s;
@@ -17,10 +17,9 @@
 }
 
 .node-start {
- 
-  background-image: url('/start.svg');
+  background-image: url("/start.svg");
   background-repeat: no-repeat;
-  background-size: 29px;
+  background-size: 30px;
   outline: 0px;
   animation-name: startFinishAnimation;
   animation-duration: 3s;
@@ -30,19 +29,17 @@
 
 @keyframes startFinishAnimation {
   0% {
-    transform: scale(.8);
+    transform: scale(0.8);
   }
-
   50% {
-    transform: scale(1.3); 
+    transform: scale(1.3);
   }
-
   100% {
-    transform: scale(.8);
+    transform: scale(0.8);
   }
 }
 
-.node-wall{
+.node-wall {
   animation-name: wallAnimation;
   animation-duration: 0.4s;
   animation-timing-function: ease-out;
@@ -51,24 +48,22 @@
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-play-state: running;
-  background-color: #631721;
+  background-color:  #353746;
 }
 
 @keyframes wallAnimation {
   0% {
-    transform: scale(.3);
+    transform: scale(0.3);
   }
 
   50% {
-    transform: scale(1.2); 
+    transform: scale(1.2);
   }
 
   100% {
-    transform: scale(1.0);
+    transform: scale(1);
   }
 }
-
-
 
 .node-visited {
   animation-name: visitedAnimation;
@@ -86,24 +81,24 @@
     transform: scale(0.3);
     background-color: #2d132c9f;
     border-radius: 100%;
-    outline: 0px solid  #2d132c9f;
+    outline: 0px solid #2d132c9f;
   }
 
   50% {
     background-color: #8013369f;
-    outline: 0px solid  #8013369f;
+    outline: 0px solid #8013369f;
   }
 
   75% {
     transform: scale(1.2);
     background-color: #c72c4173;
-    outline: 0px solid  #c72c4173;
+    outline: 0px solid #c72c4173;
   }
 
   100% {
     transform: scale(1);
     background-color: #cc4a5b52;
-    outline: 1.1px solid  #cc4a5b52;
+    outline: 1.1px solid #cc4a5b52;
   }
 }
 
@@ -117,7 +112,7 @@
   animation-fill-mode: forwards;
   animation-play-state: running;
   background-color: #cc7a4ace;
-  outline: 0.1px solid  #cc7a4ace;
+  outline: 0.1px solid #cc7a4ace;
 }
 
 @keyframes shortestPath {

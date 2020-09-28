@@ -1,8 +1,9 @@
 .App-header {
-  background-color: #212121;
+  background-color: #353746;
   color: white;
 }
-.logo-name{
+
+.logo-name {
   margin: 0px;
 }
 
@@ -11,13 +12,14 @@
   color: #fff !important;
   background-color: #c72c419f !important;
   border-color: #c72c419f !important;
+  background-image: linear-gradient(138deg, #cc7a4ae3, #cc7a4ae3);
 }
 
 .btn-visualization:hover {
   background-color: #c53447 !important;
-  border-color: #c53447 !important; 
+  border-color: #c53447 !important;
 }
 
 .btn-clear {
-  margin:10px;
+  margin: 10px;
 }

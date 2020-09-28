@@ -1,5 +1,6 @@
 import React, { Fragment, useState } from "react";
 import Node from "./Node/Node";
+import PickAlgorithm from "./PickAlgorithm/PickAlgorithm";
 import Navbar from "./Layout/Navbar";
 import { visualizeDijkstra } from "../algorithms/dijkstra";
 
@@ -40,26 +41,25 @@ const Grid = () => {
 
   const handleMouseEnter = (row, col) => {
     if (!isMousePressed) return;
-    let newGrid;
     if (startNode.isMoving) {
-      newGrid = GridFactory.getNewGridWithStarNode(grid, row, col, false);
+      setGrid(GridFactory.getNewGridWithStarNode(grid, row, col, false));
       setStartNode({ ...startNode, row, col });
     } else if (finishNode.isMoving) {
-      newGrid = GridFactory.getNewGridWithFinishNode(grid, row, col, false);
+      setGrid(GridFactory.getNewGridWithFinishNode(grid, row, col, false));
       setFinishNode({ ...finishNode, row, col });
     } else {
-      newGrid = GridFactory.getNewGridWithWallToggled(grid, row, col);
+      setGrid(GridFactory.getNewGridWithWallToggled(grid, row, col));
     }
-    setGrid(newGrid);
   };
 
   const handleMouseLeave = (row, col) => {
     if (!isMousePressed) return;
+    let newGrid;
     if (startNode.isMoving) {
-      const newGrid = GridFactory.getNewGridWithStarNode(grid, row, col, true);
+      newGrid = GridFactory.getNewGridWithStarNode(grid, row, col, true);
       setGrid(newGrid);
     } else if (finishNode.isMoving) {
-      const newGrid = GridFactory.getNewGridWithFinishNode(
+      newGrid = GridFactory.getNewGridWithFinishNode(
         grid,
         row,
         col,
@@ -88,6 +88,7 @@ const Grid = () => {
           setGrid(GridFactory.clearGrid(startNode, finishNode))
         }
       ></Navbar>
+      <PickAlgorithm></PickAlgorithm>
       <div className="grid" onMouseUp={() => handleMouseUp()}>
         {grid.map((row, rowIdx) => {
           return (
