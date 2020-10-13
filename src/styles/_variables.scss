@@ -4,6 +4,7 @@ $node-wall-color: #353746;
 
 $btn-gradient-primary-color: #c72c41a8;
 $btn-gradient-secondary-color: #cc7a4ae3;
+$grid-background-color: #1f2029;
 
 :export {
   node-border-color: $node-border-color;
@@ -12,4 +13,5 @@ $btn-gradient-secondary-color: #cc7a4ae3;
 
   btn-gradient-primary-color: $btn-gradient-primary-color;
   btn-gradient-secondary-color: $btn-gradient-secondary-color;
+  grid-background-color: $grid-background-color;
 }
