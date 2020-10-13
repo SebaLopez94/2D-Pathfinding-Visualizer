@@ -1,12 +1,7 @@
 :export {
-  visitedColor: #75e1ff;
-  shortestColor: #cf2541;
-  fixedColor: #000000;
-  clickedColor: #fcba03;
-  initialColor: #a1a6a3;
-  node-border: #c72c419f;
-  boardRow: 16;
-  boardCol: 30;
+  node-border-color: #c72c419f;
+  node-shortest-path-color: #cc7a4ace;
+  node-wall-color: #353746;
 }
 
 .node {
