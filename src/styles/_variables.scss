@@ -1,0 +1,9 @@
+$node-border-color: #c72c419f;
+$node-shortest-path-color: #cc7a4ace;
+$node-wall-color: #353746;
+
+:export {
+  node-border-color: $node-border-color;
+  node-shortest-path-color: $node-shortest-path-color;
+  node-wall-color: $node-wall-color;
+}

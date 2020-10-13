@@ -1,8 +1,4 @@
-:export {
-  node-border-color: #c72c419f;
-  node-shortest-path-color: #cc7a4ace;
-  node-wall-color: #353746;
-}
+@import '../../styles/_variables';
 
 .App-header {
   background-color: #353746;
@@ -14,7 +10,7 @@
 }
 
 .btn-visualization {
-  margin: 10px;
+  margin: 10px; 
   color: #fff !important;
   background-color: #c72c419f !important;
   border-color: #c72c419f !important;
@@ -29,4 +25,3 @@
 .btn-clear {
   margin: 10px;
 }
-/*# sourceMappingURL=Navbar.css.map */

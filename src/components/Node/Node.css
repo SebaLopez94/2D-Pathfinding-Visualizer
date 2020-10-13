@@ -1,3 +1,14 @@
+:export {
+  visitedColor: #75e1ff;
+  shortestColor: #cf2541;
+  fixedColor: #000000;
+  clickedColor: #fcba03;
+  initialColor: #a1a6a3;
+  node-border: #c72c419f;
+  boardRow: 16;
+  boardCol: 30;
+}
+
 .node {
   width: 32px;
   height: 32px;
@@ -10,10 +21,14 @@
   background-repeat: no-repeat;
   background-size: 30px;
   outline: 0px;
-  animation-name: startFinishAnimation;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: startFinishAnimation;
+          animation-name: startFinishAnimation;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .node-start {
@@ -21,110 +36,215 @@
   background-repeat: no-repeat;
   background-size: 30px;
   outline: 0px;
-  animation-name: startFinishAnimation;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: startFinishAnimation;
+          animation-name: startFinishAnimation;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes startFinishAnimation {
+  0% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  50% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  100% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
 }
 
 @keyframes startFinishAnimation {
   0% {
-    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
   50% {
-    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
   }
   100% {
-    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
 }
 
 .node-wall {
-  animation-name: wallAnimation;
-  animation-duration: 0.4s;
-  animation-timing-function: ease-out;
-  animation-delay: 0;
-  animation-direction: alternate;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  animation-play-state: running;
-  background-color:  #353746;
+  -webkit-animation-name: wallAnimation;
+          animation-name: wallAnimation;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+  background-color: #353746;
+}
+
+@-webkit-keyframes wallAnimation {
+  0% {
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 @keyframes wallAnimation {
   0% {
-    transform: scale(0.3);
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
   }
-
   50% {
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
-
   100% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
 .node-visited {
-  animation-name: visitedAnimation;
-  animation-duration: 1.5s;
-  animation-timing-function: ease-out;
-  animation-delay: 0;
-  animation-direction: alternate;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  animation-play-state: running;
+  -webkit-animation-name: visitedAnimation;
+          animation-name: visitedAnimation;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
 }
 
-@keyframes visitedAnimation {
+@-webkit-keyframes visitedAnimation {
   0% {
-    transform: scale(0.3);
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
     background-color: #2d132c9f;
     border-radius: 100%;
     outline: 0px solid #2d132c9f;
   }
-
   50% {
     background-color: #8013369f;
     outline: 0px solid #8013369f;
   }
-
   75% {
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
     background-color: #c72c4173;
     outline: 0px solid #c72c4173;
   }
-
   100% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: #cc4a5b52;
+    outline: 1.1px solid #cc4a5b52;
+  }
+}
+
+@keyframes visitedAnimation {
+  0% {
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+    background-color: #2d132c9f;
+    border-radius: 100%;
+    outline: 0px solid #2d132c9f;
+  }
+  50% {
+    background-color: #8013369f;
+    outline: 0px solid #8013369f;
+  }
+  75% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    background-color: #c72c4173;
+    outline: 0px solid #c72c4173;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
     background-color: #cc4a5b52;
     outline: 1.1px solid #cc4a5b52;
   }
 }
 
 .node-shortest-path {
-  animation-name: shortestPath;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-  animation-delay: 0;
-  animation-direction: alternate;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  animation-play-state: running;
+  -webkit-animation-name: shortestPath;
+          animation-name: shortestPath;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
   background-color: #cc7a4ace;
   outline: 0.1px solid #cc7a4ace;
 }
 
-@keyframes shortestPath {
+@-webkit-keyframes shortestPath {
   0% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
-
   50% {
-    transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
   }
-
   100% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
+
+@keyframes shortestPath {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/*# sourceMappingURL=Node.css.map */

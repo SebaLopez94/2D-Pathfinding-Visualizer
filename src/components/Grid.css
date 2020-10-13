@@ -1,10 +1,16 @@
+:export {
+  node-border-color: #c72c419f;
+  node-shortest-path-color: #cc7a4ace;
+  node-wall-color: #353746;
+}
+
 .grid {
   margin: 0em auto;
-  
   width: 95%;
-  background-color:  #1f2029;
+  background-color: #1f2029;
 }
 
 .div_node {
   margin: -6px 0;
 }
+/*# sourceMappingURL=Grid.css.map */
