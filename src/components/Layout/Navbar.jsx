@@ -1,5 +1,5 @@
 import React from "react";
-import "./Navbar";
+import "./Navbar.css";
 
 const Navbar = ({ onClickVisualization, onClickClear }) => {
   return (
