@@ -1,10 +1,15 @@
 :export {
-  node-border-color: #c72c419f;
-  node-shortest-path-color: #cc7a4ace;
-  node-wall-color: #353746;
-  btn-gradient-primary-color: #c72c41a8;
-  btn-gradient-secondary-color: #cc7a4ae3;
+  node-border-color: #d15464bd;
+  node-shortest-path-color: #cc894a8c;
+  node-wall-color: #424557;
+  node-shortest-path-border-color: #f07731e3;
+  btn-gradient-primary-color: #cf4759a8;
+  btn-gradient-secondary-color: #df9062e3;
   grid-background-color: #1f2029;
+  node-visited-background-color-0: #3d1c3c9f;
+  node-visited-background-color-50: #9c264b9f;
+  node-visited-background-color-75: #d8445873;
+  node-visited-background-color-100: #d6596952;
 }
 
 .node {
@@ -12,7 +17,7 @@
   height: 1.6em;
   margin: 3px;
   display: inline-block;
-  border: 2px solid #c72c419f;
+  border: 2px solid #d15464bd;
   border-radius: 4px;
   -webkit-transition: background-color 0.3s ease-out;
   transition: background-color 0.3s ease-out;
@@ -96,7 +101,9 @@
           animation-fill-mode: forwards;
   -webkit-animation-play-state: running;
           animation-play-state: running;
-  background-color: #353746;
+  background-color: #424557;
+  border: 2px solid #546E7A;
+  border-radius: 4px;
 }
 
 @-webkit-keyframes wallAnimation {
@@ -150,53 +157,49 @@
 
 @-webkit-keyframes visitedAnimation {
   0% {
-    -webkit-transform: scale(0.3);
-            transform: scale(0.3);
-    background-color: #2d132c9f;
-    border-radius: 100%;
-    outline: 0px solid #2d132c9f;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    background-color: #3d1c3c9f;
+    border-radius: 80%;
   }
   50% {
-    background-color: #8013369f;
-    outline: 0px solid #8013369f;
+    border-radius: 60%;
+    background-color: #9c264b9f;
   }
   75% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-    background-color: #c72c4173;
-    outline: 0px solid #c72c4173;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    border-radius: 30%;
+    background-color: #d8445873;
   }
   100% {
     -webkit-transform: scale(1);
             transform: scale(1);
-    background-color: #cc4a5b52;
-    outline: 1.1px solid #cc4a5b52;
+    background-color: #d6596952;
   }
 }
 
 @keyframes visitedAnimation {
   0% {
-    -webkit-transform: scale(0.3);
-            transform: scale(0.3);
-    background-color: #2d132c9f;
-    border-radius: 100%;
-    outline: 0px solid #2d132c9f;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    background-color: #3d1c3c9f;
+    border-radius: 80%;
   }
   50% {
-    background-color: #8013369f;
-    outline: 0px solid #8013369f;
+    border-radius: 60%;
+    background-color: #9c264b9f;
   }
   75% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-    background-color: #c72c4173;
-    outline: 0px solid #c72c4173;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    border-radius: 30%;
+    background-color: #d8445873;
   }
   100% {
     -webkit-transform: scale(1);
             transform: scale(1);
-    background-color: #cc4a5b52;
-    outline: 1.1px solid #cc4a5b52;
+    background-color: #d6596952;
   }
 }
 
@@ -217,8 +220,9 @@
           animation-fill-mode: forwards;
   -webkit-animation-play-state: running;
           animation-play-state: running;
-  background-color: #cc7a4ace;
-  outline: 0.1px solid #cc7a4ace;
+  background-color: #cc894a8c;
+  border: 2px solid #f07731e3;
+  border-radius: 4px;
 }
 
 @-webkit-keyframes shortestPath {
@@ -227,8 +231,8 @@
             transform: scale(1);
   }
   50% {
-    -webkit-transform: scale(1.4);
-            transform: scale(1.4);
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
   }
   100% {
     -webkit-transform: scale(1);
@@ -242,8 +246,8 @@
             transform: scale(1);
   }
   50% {
-    -webkit-transform: scale(1.4);
-            transform: scale(1.4);
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
   }
   100% {
     -webkit-transform: scale(1);

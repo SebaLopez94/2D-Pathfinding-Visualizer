@@ -1,14 +1,18 @@
 :export {
-  node-border-color: #c72c419f;
-  node-shortest-path-color: #cc7a4ace;
-  node-wall-color: #353746;
-  btn-gradient-primary-color: #c72c41a8;
-  btn-gradient-secondary-color: #cc7a4ae3;
+  node-border-color: #d15464bd;
+  node-shortest-path-color: #cc894a8c;
+  node-wall-color: #424557;
+  node-shortest-path-border-color: #f07731e3;
+  btn-gradient-primary-color: #cf4759a8;
+  btn-gradient-secondary-color: #df9062e3;
   grid-background-color: #1f2029;
+  node-visited-background-color-0: #3d1c3c9f;
+  node-visited-background-color-50: #9c264b9f;
+  node-visited-background-color-75: #d8445873;
+  node-visited-background-color-100: #d6596952;
 }
 
 :root {
-  --dark-blue: #1f2029;
   --dark-light: #353746;
   --grey: #ecedf3;
 }
@@ -36,13 +40,13 @@ p {
 .checkbox-budget:not(:checked) + label {
   position: relative;
   display: inline-block;
-  padding: 20px 2px;
+  padding: 10px 2px;
   width: 330px;
   font-size: 35px;
   line-height: 52px;
   font-weight: 680;
   letter-spacing: 1px;
-  margin: 2em 15px 1em;
+  margin: 2em 15px 0em;
   text-align: center;
   border-radius: 5px;
   overflow: hidden;
@@ -81,7 +85,7 @@ p {
   width: 100%;
   height: 100%;
   border-radius: 4px;
-  background-image: linear-gradient(138deg, #c72c41a8, #cc7a4ae3);
+  background-image: linear-gradient(138deg, #cf4759a8, #df9062e3);
   z-index: -1;
 }
 

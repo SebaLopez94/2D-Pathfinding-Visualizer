@@ -1,10 +1,15 @@
 :export {
-  node-border-color: #c72c419f;
-  node-shortest-path-color: #cc7a4ace;
-  node-wall-color: #353746;
-  btn-gradient-primary-color: #c72c41a8;
-  btn-gradient-secondary-color: #cc7a4ae3;
+  node-border-color: #d15464bd;
+  node-shortest-path-color: #cc894a8c;
+  node-wall-color: #424557;
+  node-shortest-path-border-color: #f07731e3;
+  btn-gradient-primary-color: #cf4759a8;
+  btn-gradient-secondary-color: #df9062e3;
   grid-background-color: #1f2029;
+  node-visited-background-color-0: #3d1c3c9f;
+  node-visited-background-color-50: #9c264b9f;
+  node-visited-background-color-75: #d8445873;
+  node-visited-background-color-100: #d6596952;
 }
 
 body {

@@ -1,7 +1,6 @@
 @import '../../styles/_variables';
 
 :root {
-  --dark-blue: #1f2029;
   --dark-light: #353746;
   --grey: #ecedf3;
 }
@@ -29,13 +28,13 @@ p {
 .checkbox-budget:not(:checked) + label {
   position: relative;
   display: inline-block;
-  padding: 20px 2px;
+  padding: 10px 2px;
   width: 330px;
   font-size: 35px;
   line-height: 52px;
   font-weight: 680;
   letter-spacing: 1px;
-  margin: 2em 15px 1em;
+  margin: 2em 15px 0em;
   text-align: center;
   border-radius: 5px;
   overflow: hidden;
