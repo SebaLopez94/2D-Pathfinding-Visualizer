@@ -1,9 +1,11 @@
+import Constants from "../utils/constants";
+
 export default class GridFactory {
   static getInitialGrid = (startNode, finishNode) => {
     const grid = [];
-    for (let row = 0; row < 20; row++) {
+    for (let row = 0; row < Constants.ROWS; row++) {
       const currentRow = [];
-      for (let col = 0; col < 45; col++) {
+      for (let col = 0; col < Constants.COLUMNS; col++) {
         currentRow.push(this.createNode(col, row, startNode, finishNode));
       }
       grid.push(currentRow);
@@ -13,9 +15,9 @@ export default class GridFactory {
 
   static clearGrid = (startNode, finishNode) => {
     const grid = [];
-    for (let row = 0; row < 20; row++) {
+    for (let row = 0; row < Constants.ROWS; row++) {
       const currentRow = [];
-      for (let col = 0; col < 45; col++) {
+      for (let col = 0; col < Constants.COLUMNS; col++) {
         currentRow.push(this.createNode(col, row, startNode, finishNode));
         if (col === startNode.col && row === startNode.row) {
           document.getElementById(`node-${row}-${col}`).className =

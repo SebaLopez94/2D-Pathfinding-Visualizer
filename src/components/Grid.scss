@@ -1,12 +1,14 @@
 @import '../styles/_variables';
 
 .grid {
-  margin: 0em auto;
-  
-  width: 95%;
   background-color:  $grid-background-color;
+  height: 95%;
+  margin: 0 auto;
+  outline: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .div_node {
-  margin: -6px 0;
+  margin: -4px 0;
 }
