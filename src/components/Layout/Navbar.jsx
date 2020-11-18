@@ -3,30 +3,49 @@ import "./Navbar.css";
 
 const Navbar = ({ onClickVisualization, onClickClear }) => {
   return (
-    <nav className="App-header navbar navbar-dark ">
-
+    <div className="App-header">
+      <div className="logo-div">
         <img
           src={process.env.PUBLIC_URL + "/finditLogo.svg"}
-          width="50"
-          height="50"
-          className="d-inline-block align-top"
-          alt="FindIT" 
+          className="logo-img d-inline-block align-top"
+          alt="FindIT"
         />
-        <h3 className="logo-name"><strong>&nbsp;&nbsp;FindIT</strong></h3>
-     
-      <div className=" mx-auto">
+        <h3 className="logo-name">
+          <strong>&nbsp;&nbsp;FindIT</strong>
+        </h3>
+      </div>
+
+      <div className="btn-group-vertical floating-buttons">
         <button
           onClick={() => onClickVisualization()}
           className="btn btn-danger btn-visualization"
         >
           Visualize
         </button>
-        <button onClick={() => onClickClear()} className="btn btn-secondary btn-clear">
+        <button
+          onClick={() => onClickClear()}
+          className="btn btn-secondary btn-clear"
+        >
           Clear
         </button>
       </div>
-    </nav>
+    </div>
   );
 };
 
 export default Navbar;
+
+/**<div className=" mx-auto">
+        <button
+          onClick={() => onClickVisualization()}
+          className="btn btn-danger btn-visualization"
+        >
+          Visualize
+        </button>
+        <button
+          onClick={() => onClickClear()}
+          className="btn btn-secondary btn-clear"
+        >
+          Clear
+        </button>
+      </div>**/

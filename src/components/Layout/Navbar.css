@@ -1,11 +1,12 @@
 :export {
   node-border-color: #f75e73;
-  node-shortest-path-color: #cc894a8c;
+  node-shortest-path-color: #e9a05bb7;
   node-wall-color: #424557;
   node-shortest-path-border-color: #f07731e3;
   btn-gradient-primary-color: #cf4759a8;
   btn-gradient-secondary-color: #df9062e3;
   grid-background-color: #1f2029;
+  navbar-background-color: #353746;
   node-visited-background-color-0: #3d1c3c9f;
   node-visited-background-color-50: #9c264b9f;
   node-visited-background-color-75: #d8445873;
@@ -13,12 +14,30 @@
 }
 
 .App-header {
-  background-color: #353746;
   color: white;
 }
 
-.logo-name {
+.logo-div {
+  position: fixed;
+  top: 1em;
+  left: 0.5em;
+  opacity: 0.9;
+}
+
+.logo-div .logo-name {
   margin: 0px;
+}
+
+.logo-div .logo-img {
+  width: 55px;
+  height: 55px;
+}
+
+.floating-buttons {
+  position: fixed !important;
+  right: 0px;
+  top: 30%;
+  cursor: pointer;
 }
 
 .btn-visualization {
@@ -27,6 +46,7 @@
   background-color: #c72c419f !important;
   border-color: #c72c419f !important;
   background-image: linear-gradient(138deg, #cc7a4ae3, #cc7a4ae3);
+  border-radius: 100px;
 }
 
 .btn-visualization:hover {
@@ -36,5 +56,6 @@
 
 .btn-clear {
   margin: 10px;
+  border-radius: 100px;
 }
 /*# sourceMappingURL=Navbar.css.map */

@@ -1,27 +1,49 @@
-@import '../../styles/_variables';
+@import "../../styles/_variables";
 
 .App-header {
-  background-color: #353746;
   color: white;
 }
 
-.logo-name {
-  margin: 0px;
+.logo-div {
+  position: fixed;
+  top: 1em;
+  left: 0.5em;
+  opacity: 0.9;
+
+  .logo-name {
+    margin: 0px;
+  }
+
+  .logo-img {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+.floating-buttons {
+  position: fixed !important;
+  right: 0px ;
+  top: 30% ;
+  
+  cursor: pointer;
 }
 
 .btn-visualization {
-  margin: 10px; 
+  margin: 10px;
   color: #fff !important;
   background-color: #c72c419f !important;
   border-color: #c72c419f !important;
   background-image: linear-gradient(138deg, #cc7a4ae3, #cc7a4ae3);
+  border-radius: 100px;
 }
 
 .btn-visualization:hover {
   background-color: #c53447 !important;
   border-color: #c53447 !important;
+  
 }
 
 .btn-clear {
   margin: 10px;
+  border-radius: 100px;
 }

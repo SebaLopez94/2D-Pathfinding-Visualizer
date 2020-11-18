@@ -1,11 +1,12 @@
 :export {
   node-border-color: #f75e73;
-  node-shortest-path-color: #cc894a8c;
+  node-shortest-path-color: #e9a05bb7;
   node-wall-color: #424557;
   node-shortest-path-border-color: #f07731e3;
   btn-gradient-primary-color: #cf4759a8;
   btn-gradient-secondary-color: #df9062e3;
   grid-background-color: #1f2029;
+  navbar-background-color: #353746;
   node-visited-background-color-0: #3d1c3c9f;
   node-visited-background-color-50: #9c264b9f;
   node-visited-background-color-75: #d8445873;
@@ -41,12 +42,12 @@ p {
   position: relative;
   display: inline-block;
   padding: 10px 2px;
-  width: 330px;
+  width: 300px;
   font-size: 35px;
   line-height: 52px;
   font-weight: 680;
   letter-spacing: 1px;
-  margin: 2em 15px 0em;
+  margin: 1.5em 15px 0em;
   text-align: center;
   border-radius: 5px;
   overflow: hidden;
@@ -72,8 +73,8 @@ p {
 }
 
 .checkbox-budget:not(:checked) + label:hover {
-  -webkit-box-shadow: 0 8px 10px 0  #cc7a4a65;
-          box-shadow: 0 8px 10px 0  #cc7a4a65;
+  -webkit-box-shadow: 0 8px 10px 0 #cc7a4a65;
+          box-shadow: 0 8px 10px 0 #cc7a4a65;
 }
 
 .checkbox-budget:checked + label::before,

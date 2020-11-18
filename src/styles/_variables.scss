@@ -1,5 +1,5 @@
 $node-border-color: #f75e73;
-$node-shortest-path-color: #cc894a8c;
+$node-shortest-path-color: #e9a05bb7;
 $node-shortest-path-border-color: #f07731e3;
 $node-wall-color: #424557;
 
@@ -7,6 +7,8 @@ $btn-gradient-primary-color: #cf4759a8;
 $btn-gradient-secondary-color: #cc7a4ae3;
 $btn-gradient-secondary-color: #df9062e3;
 $grid-background-color: #1f2029;
+
+$navbar-background-color:  #353746;
 
 $node-visited-background-color-0: #3d1c3c9f;
 $node-visited-background-color-50: #9c264b9f;
@@ -21,7 +23,7 @@ $node-visited-background-color-100: #ec667871;
   btn-gradient-primary-color: $btn-gradient-primary-color;
   btn-gradient-secondary-color: $btn-gradient-secondary-color;
   grid-background-color: $grid-background-color;
-
+  navbar-background-color: $navbar-background-color;
   node-visited-background-color-0: $node-visited-background-color-0;
   node-visited-background-color-50: $node-visited-background-color-50;
   node-visited-background-color-75: $node-visited-background-color-75;

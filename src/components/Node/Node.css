@@ -1,11 +1,12 @@
 :export {
   node-border-color: #f75e73;
-  node-shortest-path-color: #cc894a8c;
+  node-shortest-path-color: #e9a05bb7;
   node-wall-color: #424557;
   node-shortest-path-border-color: #f07731e3;
   btn-gradient-primary-color: #cf4759a8;
   btn-gradient-secondary-color: #df9062e3;
   grid-background-color: #1f2029;
+  navbar-background-color: #353746;
   node-visited-background-color-0: #3d1c3c9f;
   node-visited-background-color-50: #9c264b9f;
   node-visited-background-color-75: #d8445873;
@@ -220,7 +221,7 @@
           animation-fill-mode: forwards;
   -webkit-animation-play-state: running;
           animation-play-state: running;
-  background-color: #cc894a8c;
+  background-color: #e9a05bb7;
   border: 2px solid #f07731e3;
   border-radius: 4px;
 }
