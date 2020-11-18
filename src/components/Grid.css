@@ -1,5 +1,5 @@
 :export {
-  node-border-color: #d15464bd;
+  node-border-color: #f75e73;
   node-shortest-path-color: #cc894a8c;
   node-wall-color: #424557;
   node-shortest-path-border-color: #f07731e3;
@@ -9,7 +9,7 @@
   node-visited-background-color-0: #3d1c3c9f;
   node-visited-background-color-50: #9c264b9f;
   node-visited-background-color-75: #d8445873;
-  node-visited-background-color-100: #d6596952;
+  node-visited-background-color-100: #ec667871;
 }
 
 .grid {

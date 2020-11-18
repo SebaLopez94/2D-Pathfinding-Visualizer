@@ -1,5 +1,5 @@
 :export {
-  node-border-color: #d15464bd;
+  node-border-color: #f75e73;
   node-shortest-path-color: #cc894a8c;
   node-wall-color: #424557;
   node-shortest-path-border-color: #f07731e3;
@@ -9,7 +9,7 @@
   node-visited-background-color-0: #3d1c3c9f;
   node-visited-background-color-50: #9c264b9f;
   node-visited-background-color-75: #d8445873;
-  node-visited-background-color-100: #d6596952;
+  node-visited-background-color-100: #ec667871;
 }
 
 .node {
@@ -17,7 +17,7 @@
   height: 1.6em;
   margin: 3px;
   display: inline-block;
-  border: 2px solid #d15464bd;
+  border: 2px solid #f75e73;
   border-radius: 4px;
   -webkit-transition: background-color 0.3s ease-out;
   transition: background-color 0.3s ease-out;
@@ -175,7 +175,7 @@
   100% {
     -webkit-transform: scale(1);
             transform: scale(1);
-    background-color: #d6596952;
+    background-color: #ec667871;
   }
 }
 
@@ -199,7 +199,7 @@
   100% {
     -webkit-transform: scale(1);
             transform: scale(1);
-    background-color: #d6596952;
+    background-color: #ec667871;
   }
 }
 
