@@ -35,27 +35,41 @@
 
 .floating-buttons {
   position: fixed !important;
-  right: 0px;
+  right: 2%;
   top: 30%;
   cursor: pointer;
 }
 
+.label-button {
+  margin: 20px;
+}
+
 .btn-visualization {
+  font-size: 2em;
   margin: 10px;
   color: #fff !important;
-  background-color: #c72c419f !important;
-  border-color: #c72c419f !important;
-  background-image: linear-gradient(138deg, #cc7a4ae3, #cc7a4ae3);
-  border-radius: 100px;
+  background-color: #5cc552e3 !important;
+  border-color: #5cc552e3 !important;
+  background-image: linear-gradient(138deg, #3e7456e3, #5cc552e3);
+  border-radius: 15px;
+  outline: none !important;
 }
 
 .btn-visualization:hover {
-  background-color: #c53447 !important;
-  border-color: #c53447 !important;
+  background-color: rgba(255, 255, 255, 0.541) !important;
+  border-color: rgba(255, 255, 255, 0.466) !important;
 }
 
 .btn-clear {
+  font-size: 2.4em;
   margin: 10px;
-  border-radius: 100px;
+  border-radius: 15px;
+  background-image: linear-gradient(138deg, #b1a4a2e3, #5c5554e3);
+  border-color: #302f2f !important;
+  outline: none !important;
+}
+
+.btn-clear:hover {
+  border-color: rgba(255, 255, 255, 0.466) !important;
 }
 /*# sourceMappingURL=Navbar.css.map */

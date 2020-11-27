@@ -1,5 +1,7 @@
 import React from "react";
 import "./Navbar.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlay, faTimes } from '@fortawesome/free-solid-svg-icons'
 
 const Navbar = ({ onClickVisualization, onClickClear }) => {
   return (
@@ -18,15 +20,15 @@ const Navbar = ({ onClickVisualization, onClickClear }) => {
       <div className="btn-group-vertical floating-buttons">
         <button
           onClick={() => onClickVisualization()}
-          className="btn btn-danger btn-visualization"
+          className="btn-danger btn-visualization"
         >
-          Visualize
+          <FontAwesomeIcon className="label-button" icon={faPlay} />
         </button>
         <button
           onClick={() => onClickClear()}
-          className="btn btn-secondary btn-clear"
+          className="btn-secondary btn-clear"
         >
-          Clear
+          <FontAwesomeIcon className="label-button" icon={faTimes} />
         </button>
       </div>
     </div>
