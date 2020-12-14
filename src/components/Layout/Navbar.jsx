@@ -1,18 +1,18 @@
 import React from "react";
 import "./Navbar.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlay, faTimes } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlay, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = ({ onClickVisualization, onClickClear }) => {
   return (
     <div className="App-header">
-      <div className="logo-div">
+      <div className="logo">
         <img
           src={process.env.PUBLIC_URL + "/finditLogo.svg"}
-          className="logo-img d-inline-block align-top"
+          className="d-inline-block align-top"
           alt="FindIT"
         />
-        <h3 className="logo-name">
+        <h3>
           <strong>&nbsp;&nbsp;FindIT</strong>
         </h3>
       </div>
@@ -21,14 +21,16 @@ const Navbar = ({ onClickVisualization, onClickClear }) => {
         <button
           onClick={() => onClickVisualization()}
           className="btn-danger btn-visualization"
+          title='Start'
         >
-          <FontAwesomeIcon className="label-button" icon={faPlay} />
+          <FontAwesomeIcon icon={faPlay} />
         </button>
         <button
           onClick={() => onClickClear()}
           className="btn-secondary btn-clear"
+          title='Clear'
         >
-          <FontAwesomeIcon className="label-button" icon={faTimes} />
+          <FontAwesomeIcon icon={faTimes} />
         </button>
       </div>
     </div>

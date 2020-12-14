@@ -4,17 +4,17 @@
   color: white;
 }
 
-.logo-div {
+.logo {
   position: fixed;
   top: 1em;
   left: 0.5em;
   opacity: 0.9;
 
-  .logo-name {
+  h3 {
     margin: 0px;
   }
 
-  .logo-img {
+  img {
     width: 55px;
     height: 55px;
   }
@@ -22,40 +22,58 @@
 
 .floating-buttons {
   position: fixed !important;
-  right: 2%;
+  right: 3%;
   top: 31%;
   cursor: pointer;
-}
 
-.label-button {
-  margin: 20px;
+  svg {
+    margin: 20px;
+  }
 }
 
 .btn-visualization {
-  font-size: 2em;
+  font-size: 1.6em;
   margin: 10px;
-  color: #fff !important;
+  color: #fff;
+  background-image: linear-gradient(138deg, #338a3e, #66bb6a);
   background-color: #5cc552e3 !important;
   border-color: #5cc552e3 !important;
-  background-image: linear-gradient(138deg, #3e7456e3, #5cc552e3);
-  border-radius: 15px;
+  border-radius: 12px;
+  border-width: 3px;
   outline: none !important;
-}
 
-.btn-visualization:hover {
-  background-color: rgba(255, 255, 255, 0.541) !important;
-  border-color: rgba(255, 255, 255, 0.466) !important;
+  &:hover{
+    background-image: none;
+    background-color: #e8f5e9 !important ;
+    color: #66bb6a !important;
+    transition: color 0.4s ease-out, background-color 0.4s ease-out,
+      background-image 0.4s ease-out;
+  }
+
+  &:focus{
+    box-shadow: none !important;
+  }
 }
 
 .btn-clear {
-  font-size: 2.4em;
+  font-size: 2em;
   margin: 10px;
-  border-radius: 15px;
-  background-image: linear-gradient(138deg, #b1a4a2e3, #5c5554e3);
-  border-color: rgb(48, 47, 47) !important;
+  background-image: linear-gradient(138deg, #62757f, #90a4ae);
+  border-color: #90a4ae !important;
+  border-radius: 12px;
+  border-width: 3px;
   outline: none !important;
-}
 
-.btn-clear:hover {
-  border-color: rgba(255, 255, 255, 0.466) !important;
+  &:hover{
+    background-image: none;
+    background-color: #eceff1 !important ;
+    color: #62757f !important;
+    transition: color 0.4s ease-out, background-color 0.4s ease-out,
+      background-image 0.4s ease-out;
+  }
+
+  &:focus{
+    box-shadow: none !important;
+  }
+
 }
