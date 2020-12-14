@@ -24,56 +24,52 @@
   position: fixed !important;
   right: 3%;
   top: 31%;
+  color: #fff;
   cursor: pointer;
 
   svg {
     margin: 20px;
   }
-}
 
-.btn-visualization {
-  font-size: 1.6em;
-  margin: 10px;
-  color: #fff;
-  background-image: linear-gradient(138deg, #338a3e, #66bb6a);
-  background-color: #5cc552e3 !important;
-  border-color: #5cc552e3 !important;
-  border-radius: 12px;
-  border-width: 3px;
-  outline: none !important;
+  .btn-visualization {
+    font-size: 1.6em;
+    margin: 10px;
+    background-color: #5cc552e3 !important;
+    border-color: #5cc552e3 !important;
+    border-radius: 6px;
+    outline: none !important;
 
-  &:hover{
-    background-image: none;
-    background-color: #e8f5e9 !important ;
-    color: #66bb6a !important;
-    transition: color 0.4s ease-out, background-color 0.4s ease-out,
-      background-image 0.4s ease-out;
+    &:hover {
+      background-image: none;
+      background-color: #e8f5e9 !important ;
+      color: #66bb6a !important;
+      transition: color 0.4s ease-out, background-color 0.4s ease-out,
+        background-image 0.4s ease-out;
+    }
+
+    &:focus {
+      box-shadow: none !important;
+    }
   }
 
-  &:focus{
-    box-shadow: none !important;
+  .btn-clear {
+    font-size: 2em;
+    margin: 10px;
+    background-color: #90a4ae !important;
+    border-color: #90a4ae71 !important;
+    border-radius: 5px;
+    outline: none !important;
+
+    &:hover {
+      background-image: none;
+      background-color: #eceff1 !important ;
+      color: #62757f !important;
+      transition: color 0.4s ease-out, background-color 0.4s ease-out,
+        background-image 0.4s ease-out;
+    }
+
+    &:focus {
+      box-shadow: none !important;
+    }
   }
-}
-
-.btn-clear {
-  font-size: 2em;
-  margin: 10px;
-  background-image: linear-gradient(138deg, #62757f, #90a4ae);
-  border-color: #90a4ae !important;
-  border-radius: 12px;
-  border-width: 3px;
-  outline: none !important;
-
-  &:hover{
-    background-image: none;
-    background-color: #eceff1 !important ;
-    color: #62757f !important;
-    transition: color 0.4s ease-out, background-color 0.4s ease-out,
-      background-image 0.4s ease-out;
-  }
-
-  &:focus{
-    box-shadow: none !important;
-  }
-
 }
