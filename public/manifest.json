@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "FindIT",
+  "name": "2D Pathfinding Visualizer",
   "icons": [
     {
       "src": "favicon.ico",
