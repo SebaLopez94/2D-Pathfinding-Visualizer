@@ -17,59 +17,75 @@
   color: white;
 }
 
-.logo-div {
+.logo {
   position: fixed;
   top: 1em;
   left: 0.5em;
   opacity: 0.9;
 }
 
-.logo-div .logo-name {
+.logo h3 {
   margin: 0px;
 }
 
-.logo-div .logo-img {
+.logo img {
   width: 55px;
   height: 55px;
 }
 
 .floating-buttons {
   position: fixed !important;
-  right: 2%;
-  top: 30%;
+  right: 3%;
+  top: 31%;
+  color: #fff;
   cursor: pointer;
 }
 
-.label-button {
+.floating-buttons svg {
   margin: 20px;
 }
 
-.btn-visualization {
+.floating-buttons .btn-visualization {
+  font-size: 1.6em;
+  margin: 10px;
+  background-color: #7dc477e3 !important;
+  border-color: #5cc552e3 !important;
+  border-radius: 6px;
+  outline: none !important;
+}
+
+.floating-buttons .btn-visualization:hover {
+  background-image: none;
+  background-color: #e8f5e9 !important;
+  color: #7dc477e3 !important;
+  -webkit-transition: color 0.4s ease-out, background-color 0.4s ease-out, background-image 0.4s ease-out;
+  transition: color 0.4s ease-out, background-color 0.4s ease-out, background-image 0.4s ease-out;
+}
+
+.floating-buttons .btn-visualization:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.floating-buttons .btn-clear {
   font-size: 2em;
   margin: 10px;
-  color: #fff !important;
-  background-color: #5cc552e3 !important;
-  border-color: #5cc552e3 !important;
-  background-image: linear-gradient(138deg, #3e7456e3, #5cc552e3);
-  border-radius: 15px;
+  background-color: #62757f !important;
+  border-color: #90a4ae71 !important;
+  border-radius: 5px;
   outline: none !important;
 }
 
-.btn-visualization:hover {
-  background-color: rgba(255, 255, 255, 0.541) !important;
-  border-color: rgba(255, 255, 255, 0.466) !important;
+.floating-buttons .btn-clear:hover {
+  background-image: none;
+  background-color: #eceff1 !important;
+  color: #62757f !important;
+  -webkit-transition: color 0.4s ease-out, background-color 0.4s ease-out, background-image 0.4s ease-out;
+  transition: color 0.4s ease-out, background-color 0.4s ease-out, background-image 0.4s ease-out;
 }
 
-.btn-clear {
-  font-size: 2.4em;
-  margin: 10px;
-  border-radius: 15px;
-  background-image: linear-gradient(138deg, #b1a4a2e3, #5c5554e3);
-  border-color: #302f2f !important;
-  outline: none !important;
-}
-
-.btn-clear:hover {
-  border-color: rgba(255, 255, 255, 0.466) !important;
+.floating-buttons .btn-clear:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
 }
 /*# sourceMappingURL=Navbar.css.map */

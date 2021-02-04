@@ -27,6 +27,18 @@
           flex-direction: column;
 }
 
+.created_by {
+  margin-top: 18px;
+}
+
+.created_by a {
+  color: #a2aaaf;
+}
+
+.created_by a:hover {
+  color: #a2aaaf;
+}
+
 .div_node {
   margin: -4px 0;
 }

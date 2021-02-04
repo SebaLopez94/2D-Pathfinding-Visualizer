@@ -113,6 +113,8 @@ const Grid = () => {
             </div>
           );
         })}
+
+         <h5 className="created_by"><a href="https://www.linkedin.com/in/sebastian-lopez-garcia/">Created by Seba López</a></h5>
       </div>
     </Fragment>
   );

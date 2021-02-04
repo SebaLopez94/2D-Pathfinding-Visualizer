@@ -11,13 +11,13 @@ const PickAlgorithm = () => {
 						<input class="checkbox-budget" type="radio" name="budget" id="budget-1" checked/>
 						<label class="for-checkbox-budget" for="budget-1">
 							<span data-hover="Dijkstra">Dijkstra</span>
-						</label><input class="checkbox-budget" type="radio" name="budget" id="budget-2"/>
+						</label><input class="checkbox-budget"  disabled="disabled" type="radio" name="budget" id="budget-2"/>
 						<label class="for-checkbox-budget" for="budget-2">							
 							<span data-hover="A* (A-Star) ">A*  (A-Star)</span>
-						</label><input class="checkbox-budget" type="radio" name="budget" id="budget-3"/>
+						</label><input class="checkbox-budget"  disabled="disabled" type="radio" name="budget" id="budget-3"/>
 						<label class="for-checkbox-budget" for="budget-3">							
 							<span data-hover="Breadth First Search">Breadth First</span>
-						</label><input class="checkbox-budget" type="radio" name="budget" id="budget-4"/>
+						</label><input class="checkbox-budget"  disabled="disabled" type="radio" name="budget" id="budget-4"/>
 						<label class="for-checkbox-budget" for="budget-4">							
 							<span data-hover="Depth First">Depth First</span>
 						</label>
