@@ -1,6 +1,10 @@
-## Demo
+[![Build Status](https://travis-ci.com/SebaLG/2D-Pathfinding-Visualizer.svg?branch=master)](https://travis-ci.com/SebaLG/2D-Pathfinding-Visualizer)
+
+
+## 2D Pathfinding Visualizer
 
 <img src="./img/PathfindingVisualizer.gif">
+
 
 ## Stack
 
@@ -38,3 +42,6 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+
+Only Dijkstra available at present
