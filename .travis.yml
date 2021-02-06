@@ -1,8 +1,8 @@
-dist: trusty
 language: node_js
 node_js:
-- "stable"
-before_script:
-- npm install
+  - "stable"
+cache:
+  directories:
+  - node_modules
 script:
-- npm run build
+  - npm run build
