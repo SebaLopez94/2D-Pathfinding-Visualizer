@@ -3,7 +3,7 @@
 
 ## 2D Pathfinding Visualizer
 
-<img src="./img/PathfindingVisualizer.gif">
+<img src="./img/PathfindingVisualizer.gif"> 
 
 
 ## Stack
