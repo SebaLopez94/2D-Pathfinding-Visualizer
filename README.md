@@ -3,6 +3,8 @@
 
 ## 2D Pathfinding Visualizer
 
+Live demo: https://sebalg.github.io/2D-Pathfinding-Visualizer/
+
 <img src="./img/PathfindingVisualizer.gif"> 
 
 
