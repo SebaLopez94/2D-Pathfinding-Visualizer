@@ -8,7 +8,13 @@
 }
 
 
-
 .App-link {
   color: #09d3ac;
+}
+
+
+.mobile-not-available {
+  color: white;
+  text-align: center;
+  margin: 5em 1em ;
 }
