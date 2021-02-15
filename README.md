@@ -7,6 +7,7 @@ Live demo: https://sebalg.github.io/2D-Pathfinding-Visualizer/
 
 <img src="./img/PathfindingVisualizer.gif"> 
 
+ > - Only Dijkstra available at present
 
 ## Stack
 
@@ -14,8 +15,6 @@ Live demo: https://sebalg.github.io/2D-Pathfinding-Visualizer/
 |                  React Hooks                  |              Style Preprocessor              | 
 | :-------------------------------------------: | :------------------------------------------: |
 | <img src="./img/react.svg" height="100px"> | <img src="./img/sass.png" height="100px"> |
-
-
 
 
 
